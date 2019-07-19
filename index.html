@@ -4,18 +4,34 @@
         <meta charset="utf-8">
         <title>CloutFinder</title>
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">    <title>CloutFinder</title>
     </head>
     <body>
         <header>
-            <h1>Cloutfinder</h1>
-            <h2>Be the photographer your model wants you to be</h2>
+            <h1><img class="webLogo" src="img/cflogo.png" alt="CloutFinder"></h1>
         </header>
-        <ul class="sidebar">
-            <li><a href="ViewProfile.asp"><img src="img/defaultuser.png" alt="User"></a></li>
-            <li><a href="Home.asp">Home</a></li>
-            <li><a href="ViewProfile.asp">View Profile</a></li>
-            <li><a href="Settings.asp">Settings</a></li>
-        </ul>
+        <div class="mainContent">
+            <ul class="sidebar" id="myTab" role="tablist">
+                <li class="sidebar-list">
+                    <a href="ViewProfile.asp"><img class="userImg" src="img/defaultuser.png" alt="User"></a>
+                </li>
+                <li>
+                    <a href="Home.asp">Home</a>
+                </li>
+                <li>
+                    <a href="Matches.asp">Matches</a>
+                </li>
+                <li>
+                    <a href="ViewProfile.asp">View Profile</a>
+                </li>
+                <li>
+                    <a href="Settings.asp">Settings</a>
+                </li>
+            </ul>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </body>
     <footer>
     </footer>

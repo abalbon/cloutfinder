@@ -1,18 +1,16 @@
 body {
     display: flex;
     flex-direction: column;
+
 }
 
 header {
-    background-color: #E3C764;
+    display:flex;
     justify-content: center;
     text-align: center;
-    flex: auto;
-}
+    background-color: rgba(189, 104, 104, 0.89);
+    height: 9em;
 
-h1 {
-    color: #E32A3D;
-    font-size: 40px;
 }
 
 .sidebar {
@@ -20,39 +18,35 @@ h1 {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    background: seashell;
 }
 
 li a {
     display: block;
     width: 300px;
     text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 2em;
 }
 
 li a:hover {
     background-color:#c9c9ff;
+    text-decoration: none;
 }
 
 ul {
-    border: 1px solid black;
+    border-right: 1px solid black;
     height: 100%;
     position: fixed;
     overflow: auto;
-    background: teal;
-}
-
-li {
-    border-bottom: 1px solid black;
 }
 
 .usrImg {
-    width: 50px;
-    height: auto;
+    border-radius: 50%;
 }
 
 .mainContent {
     display: flex;
     flex-direction: row;
-}
-p {
-    justify-content: flex-end;
 }
