@@ -1,18 +1,8 @@
 .container {
-    display: flex;
-    flex-direction: column;
-}
-
-.mainPage {
-    display: flex;
-}
-
-header {
-    text-align: center;
-    background-color: rgba(189, 104, 104, 0.89);
-    position: sticky;
-    position: -webkit-stick;
-    top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .slideimg {
@@ -25,39 +15,42 @@ ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    width: 15em;
 }
 
 .mainPageContent {
-    flex: 3;
+    margin-left: 15em;
 }
 .sidebar {
-    flex: 1;
+    text-align: center;
     background: seashell;
     border-right: 1px solid black;
     overflow: auto;
-    top: 0;
-    position: static;
+    position: fixed;
+    height: 100%;
 }
 
 .usrImg {
     width: 100%;
 }
 
+.webLogo {
+    width: 15em;
+}
+
+li {
+    text-align: center;
+}
+
 li a {
-    display: block;
     text-align: center;
     text-decoration: none;
     color: black;
     font-size: 2em;
     list-style: none;
+    width: 15em;
 }
 
 li a:hover {
     background-color:#c9c9ff;
     text-decoration: none;
-}
-
-.usrImg {
-    border-radius: 50%;
 }
