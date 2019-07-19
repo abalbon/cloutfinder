@@ -1,13 +1,13 @@
 body {
     display: flex;
     flex-direction: column;
-    background-color: #10ADA5;
 }
 
 header {
     background-color: #E3C764;
     justify-content: center;
     text-align: center;
+    flex: auto;
 }
 
 h1 {
@@ -15,21 +15,44 @@ h1 {
     font-size: 40px;
 }
 
-.usrImg {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    width: 30%;
+.sidebar {
+    flex: 1;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li a {
+    display: block;
+    width: 300px;
+    text-align: center;
+}
+
+li a:hover {
+    background-color:#c9c9ff;
 }
 
 ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    list-style-type: none;
+    border: 1px solid black;
+    height: 100%;
+    position: fixed;
+    overflow: auto;
+    background: teal;
 }
 
 li {
-    font-size: 20px;
+    border-bottom: 1px solid black;
+}
 
+.usrImg {
+    width: 50px;
+    height: auto;
+}
+
+.mainContent {
+    display: flex;
+    flex-direction: row;
+}
+p {
+    justify-content: flex-end;
 }
