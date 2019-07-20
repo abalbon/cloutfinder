@@ -29,10 +29,6 @@ ul {
     height: 100%;
 }
 
-.usrImg {
-    width: 100%;
-}
-
 .webLogo {
     width: 15em;
 }
@@ -53,4 +49,26 @@ li a {
 li a:hover {
     background-color:#c9c9ff;
     text-decoration: none;
+}
+
+.userImg {
+    border-radius: 50%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
 }
