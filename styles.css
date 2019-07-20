@@ -1,6 +1,7 @@
-body {
+body.container {
     padding: 0;
     margin: 0;
+    width: 100%;
 }
 
 .slideimg {
@@ -17,7 +18,8 @@ ul {
 .mainPageContent {
     display: flex;
     flex-direction: column;
-    margin-left: 15em;
+    margin-left: 233.01px;
+    width: 100%;
 }
 .sidebar {
     text-align: center;
@@ -30,16 +32,29 @@ ul {
 }
 
 .matchedUser {
+    background: #c9c9ff;
+    opacity: 0.8;
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     position: fixed;
-    background: #c9c9ff;
-    opacity: 0.7;
-    width: 41%;
+    flex: 1;
+    width: 960px;
+    height: 54.38px;
 }
+
+.userHeader {
+    font-weight: bolder;
+    font-size: 2em;
+}
+.userChoice {
+    color: coral;
+    font-weight: bold;
+    font-size: 1em;
+}
+
 .webLogo {
     width: 225px;
     margin: 4px;
@@ -83,4 +98,9 @@ li a:hover {
     margin-top: 8px;
     vertical-align: middle;
     width: 100%;
+}
+
+.tab-pane#homeContent {
+    display: flex;
+    justify-content: center;
 }
