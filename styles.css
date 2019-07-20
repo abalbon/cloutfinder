@@ -15,20 +15,34 @@ ul {
 }
 
 .mainPageContent {
+    display: flex;
+    flex-direction: column;
     margin-left: 15em;
 }
 .sidebar {
     text-align: center;
-    background: seashell;
-    border-right: 1px solid black;
+    background: lightgoldenrodyellow;
     overflow: auto;
     position: fixed;
     height: 100%;
     max-width: 15em;
+    
 }
 
+.matchedUser {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    background: #c9c9ff;
+    opacity: 0.7;
+    width: 41%;
+}
 .webLogo {
     width: 225px;
+    margin: 4px;
 }
 
 li {
