@@ -8,8 +8,16 @@ Then use the following commands: <br/>
 
 `npm install `</br> </br>
 
-Check your node.js version by typing in:
- `npm -v`
+Check your node.js version by typing in:  </br>
+ `npm -v` </br>
+ 
+ Navigate into the project folder and type:  </br>
+ `npm install express --save` </br> 
+ `npm install -g nodemon` </br> </br>
+ 
+ Type to start website:
+ `nodemon app.js` </br> </br>
+ And type `localhost:3000` into URL
 
 # Vue.js - https://vuejs.org/v2/guide/
 
