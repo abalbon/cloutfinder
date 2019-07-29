@@ -1,0 +1,24 @@
+{
+  "name": "cloutfinder",
+  "version": "1.0.0",
+  "description": "CloutFinder JSON",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "jquery": "^3.4.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abalbon/cloutfinder.git"
+  },
+  "author": "Nathan, Albert, Eugene, Brannon, Mike",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abalbon/cloutfinder/issues"
+  },
+  "homepage": "https://github.com/abalbon/cloutfinder#readme"
+}
