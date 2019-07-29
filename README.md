@@ -23,3 +23,12 @@ Check your node.js version by typing in:  </br>
 
 Include this script tag at the bottom of all body tags </br>
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+
+
+# Other Resources
+
+https://www.w3schools.com/nodejs/ <br/>
+https://www.w3schools.com/booTsTrap/default.asp <br/>
+https://expressjs.com/en/guide/routing.html <br/>
+https://www.tutorialspoint.com/nodejs/nodejs_express_framework.htm <br/>
+https://developers.google.com/maps/documentation/javascript/tutorial?authuser=1 <br/>
