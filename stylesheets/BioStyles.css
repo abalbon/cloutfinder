@@ -1,0 +1,31 @@
+/*
+	Comment
+*/
+
+a { /* Comment */ color: /* Comment */ Red; }
+
+.TestClass {
+	color: Black;
+	background-color: White;
+	text-align: left;
+}
+
+.imageRow {
+	display: flex;
+	flex-direction: row;
+}
+
+img {
+	max-width:100%; 
+	max-height:100%;
+}
+
+header{
+	text-align: center;
+	font-weight: bold;
+	font-size: 48px;
+}
+
+p{
+	font-size: 24px;
+}
