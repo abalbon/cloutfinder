@@ -36,11 +36,12 @@
                         <div class="headerText"
                             data-stein-url= "https://api.steinhq.com/v1/storages/5d3f9f9b87c49c04cac13690/Users"                            "
                             data-stein-limit="1"
+                            data-stein-offset= index
                         >
                             <h2 class="viewMatchedProfile">{{fname}}</h2>
                             <ul class="choiceList">
                                 <li class="userChoice">
-                                    <a id="likeChoice" href="">Like</a>
+                                    <button id="likeChoice" onclick="nextUser()">Like</button>
                                 </li>
                                 <li class="userChoice">
                                     <a id="dislikeChoice" href="">Dislike</a>
@@ -88,5 +89,6 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <script src="https://unpkg.com/stein-expedite@0.0.1/dist/index.js"></script>
         <script src="register.js"></script>
+        <script src="cloutfinder.js"></script>
     </body>
 </html>

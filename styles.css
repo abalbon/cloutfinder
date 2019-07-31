@@ -57,7 +57,7 @@ ul {
     justify-content: space-around;
 }
 
-.viewMatchedProfile a{
+.viewMatchedProfile {
     text-align: center;
     position: absolute;
     top: 50%;
