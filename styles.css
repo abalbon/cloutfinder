@@ -1,139 +1,124 @@
-body.container {
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    height: 100%;
-}
+    .slideimg {
+        max-width: 10em;;
+        height: auto;
+    }
 
-.slideimg {
-    max-width: 10em;;
-    height: auto;
-}
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
 
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
+    .headerText {
+        display: flex;
+        flex-direction: column;
+    }
 
-.headerText {
-    display: flex;
-    flex-direction: column;
-}
+    .tab-pane {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
 
-.tab-pane {
-    display: flex;
-    flex-direction: column;
-    margin-left: 233.01px;
-    width: 100%;
-}
+    .sidebar {
+        text-align: center;
+        background: lightgoldenrodyellow;
+        overflow: auto;
+        position: fixed;
+        height: 100%;
+        max-width: 15em;
+    }
 
-.sidebar {
-    text-align: center;
-    background: lightgoldenrodyellow;
-    overflow: auto;
-    position: fixed;
-    height: 100%;
-    max-width: 15em;
-    
-}
+    .mainPageContent {
+        margin-left: 233.01px;
+    }
 
-.matchedUser {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/photographer2.jpg");
-    opacity: 0.9;
-    padding: 0;
-    margin: 0;
-    height: 10em;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    top: 0;
-    position: sticky;
-    position: -webkit-sticky;
-}
-.choiceList {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
+    .matchedUser {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/photographer2.jpg");
+        opacity: 0.9;
+        padding: 0;
+        margin: 0;
+        height: 10em;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        top: 0;
+        position: sticky;
+        position: -webkit-sticky;
+    }
+    .choiceList {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
 
-.viewMatchedProfile {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 3em;
-}
+    .viewMatchedProfile {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 3em;
+    }
 
-.viewMatchedProfile a:hover {
-    color: white;
-}
+    .viewMatchedProfile a:hover {
+        color: white;
+    }
 
-li a#likeChoice,
-li a#dislikeChoice {
-    color: white;
-    font-size: 1.5em;
-}
+    li a#likeChoice,
+    li a#dislikeChoice {
+        color: white;
+        font-size: 1.5em;
+    }
 
-li a#likeChoice:hover {
-    background-color: green;
-    text-decoration: none;
+    li a#likeChoice:hover {
+        background-color: green;
+        text-decoration: none;
 
-}
+    }
 
-li a#dislikeChoice:hover {
-    background-color: red;
-    text-decoration: none;
-}
+    li a#dislikeChoice:hover {
+        background-color: red;
+        text-decoration: none;
+    }
 
-.webLogo {
-    width: 225px;
-    margin: 4px;
-}
+    .webLogo {
+        width: 225px;
+        margin: 4px;
+    }
 
-li {
-    text-align: center;
-}
+    li {
+        text-align: center;
+    }
 
-.nav-link {
-    text-align: center;
-    text-decoration: none;
-    color: black;
-    font-size: 15px;
-    list-style: none;
-    width: 15em;
-}
+    .nav-link {
+        text-align: center;
+        text-decoration: none;
+        color: black;
+        font-size: 15px;
+        list-style: none;
+        width: 15em;
+    }
 
-li a.nav-link:hover {
-    background-color:#c9c9ff;
-    text-decoration: none;
-}
+    li a.nav-link:hover {
+        background-color:#c9c9ff;
+        text-decoration: none;
+    }
 
-.userImg {
-    border-radius: 50%;
-}
+    .userImg {
+        border-radius: 50%;
+    }
 
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-}
+    .tab-pane#homeContent {
+        display: flex;
+        justify-content: center;
+    }
 
-.column {
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
-}
+    table {
+        text-align: center;
+    }
 
-.column img {
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100%;
-}
-
-.tab-pane#homeContent {
-    display: flex;
-    justify-content: center;
-}
+    table img {
+        width: 30%;
+    }

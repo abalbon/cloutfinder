@@ -1,25 +1,11 @@
-let index = 0;
-
 function nextUser() {
     console.log("Button is pressed");
-    index = index + 1;
-
-    document.getElementById("likeChoice").value = 
     
-    //index = $(".headerText").data("stein-offset") + 1;
-    $(".headerText").attr("data-stein-offset", index); 
+    $(document).ready(function() {
+        let num = $('#userHeader').data("stein-offset") + 1;
+        console.log(num);
+        $('#userHeader').data('stein-offset', num);
+    })
     
-    console.log(index);
-
-}
-
-
-
-
-
- 
-
-
-
-
-    
+    console.log($('#userHeader').data("stein-offset"));
+};
