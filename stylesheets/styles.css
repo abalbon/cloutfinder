@@ -122,3 +122,10 @@
     table img {
         width: 30%;
     }
+
+.fclass {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
