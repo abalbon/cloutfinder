@@ -9,7 +9,8 @@ function search_stein(e) {
     let username = $("#username_login").val();
     let password = $("#username_password").val();
 
-    store.read("Users", { search: { username: username, password: password} }).then(data => {
+    store.read("Users", { search: { username: username, 
+                                    password: password} }).then(data => {
         if(data.length != 0) {
             console.log("Username: " + data[0].username + " \nPassword: " + data[0].password);
             validate_login(data, username, password);
@@ -27,6 +28,7 @@ function search_stein(e) {
 function validate_login(data, username, password) {
     if ((username == data[0].username) && (password == data[0].password)) {
         console.log("LOGIN SUCCESS");
+        location.href = "/site/index.html";  
         return true;
     }
     else {
