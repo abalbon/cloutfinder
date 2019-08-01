@@ -117,11 +117,12 @@ li a.nav-link:hover {
 
 table {
     text-align: center;
+    justify-content: right;
     margin: 4px;
 }
 
 table img {
-    width: 30%;
+    width: 100%;
 }
 
 .fclass {
@@ -129,4 +130,10 @@ table img {
     flex-flow: column;
     justify-content: center;
     align-items: center;
+}
+
+.center-table {
+    display: flex;
+    align-items: center;
+     justify-content: center;
 }
