@@ -9,3 +9,4 @@ function nextUser() {
     
     console.log($('#userHeader').data("stein-offset"));
 };
+

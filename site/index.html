@@ -14,7 +14,10 @@
                         <img class="webLogo" src="/img/cflogo.png" alt="CloutFinder">
                     </li>
                     <li>
-                        <a href="ViewProfile.asp"><img class="userImg" src="/img/defaultuser.png" alt="User"></a>
+                        <img id="userImg" class="userImg" src="/img/defaultuser.png" alt="User">
+                    </li>
+                    <li>
+                        <h3 id="userTitle"></h3>
                     </li>
                     <li class="nav-item">
                         <a href="/site/index.html" class="btn btn-link" role="button">Home</a>
@@ -27,6 +30,9 @@
                     </li>
                     <li class="nav-item">
                         <a href= "/site/edit_profile.html" class="btn btn-link" role="button">Settings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/site/login.html" class="btn btn-link" role="button">Log Out</a>
                     </li>
                 </ul>
             </div>
@@ -69,33 +75,6 @@
                             </div>
                         </tr>
                     </table>
-                    <!-- <div class="row"
-                        data-stein-url= "https://api.steinhq.com/v1/storages/5d3f9f9b87c49c04cac13690/Users"
-                        data-stein-limit = "3"                            "
-                        >
-                        <div class="column">
-                            <img src="{{image}}">
-                            <h3>{{fname}} {{lname}}</h3>
-                            <button type='button' class='btn btn-info btn-sm' data-toggle="modal" data-target='#myModal'>View Profile</button>
-                            <div id='myModal' class='modal fade' role='dialog'>
-                                <div class='modal-dialog modal-lg'>
-                                    <div class='modal-content'>
-                                        <div class='modal-header'>
-                                            <img src="{{image}}" class="img-thumbnail">
-                                            <h2 class="modal-title text-center">{{fname}}</h2>
-                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                        </div>
-                                        <div class='modal-body'>
-                                            <p>{{bio}}</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-                    
-                    
-
                 </div>
                 <div class="tab-pane fade" id="userMatches" role="tabpanel" aria-labelledby="matches-tab">
                     <h1>Matches</h1>   
@@ -117,7 +96,7 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <script src="https://unpkg.com/stein-js-client"></script>
         <script src="https://unpkg.com/stein-expedite@0.0.1/dist/index.js"></script>
-        <script src="register.js"></script>
-        <script src="cloutfinder.js"></script>
+        <script src="/cloutfinder.js"></script>
+        <script src="/scripts/validate.js"></script>
     </body>
 </html>

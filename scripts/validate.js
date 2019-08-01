@@ -14,6 +14,7 @@ function search_stein(e) {
         if(data.length != 0) {
             console.log("Username: " + data[0].username + " \nPassword: " + data[0].password);
             validate_login(data, username, password);
+            displayUsername(data);
         }
         else {
             console.log("LOGIN FAILED");
@@ -25,10 +26,16 @@ function search_stein(e) {
     e.preventDefault();
 }
 
+function displayUsername(data) {
+    document.getElementById('userTitle').innerHTML = data[0].username;
+    document.getElementById('userImg').src = data[0].image;
+}
+
 function validate_login(data, username, password) {
     if ((username == data[0].username) && (password == data[0].password)) {
         console.log("LOGIN SUCCESS");
-        location.href = "/site/index.html";  
+        location.href = "/site/index.html";
+        
         return true;
     }
     else {
@@ -37,5 +44,4 @@ function validate_login(data, username, password) {
         return false;
     }
 }
-
   
