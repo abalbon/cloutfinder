@@ -137,3 +137,10 @@ li a.nav-link:hover {
     display: flex;
     justify-content: center;
 }
+
+.fclass {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
