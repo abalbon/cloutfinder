@@ -11,8 +11,8 @@ function myFunction(e) {
         "https://api.steinhq.com/v1/storages/5d3f9f9b87c49c04cac13690"
     );
 
-    //let images = ["/img/user1.jpg", "/img/user2.jpg", "/img/user3.jpg"];
-    //let randNum = Math.floor(Math.random() * 3);
+    let images = ["/img/user1.jpg", "/img/user2.jpg", "/img/user3.jpg"];
+    let randNum = Math.floor(Math.random() * 3);
 
     let fname = $("#fname").val();
     let lname = $("#lname").val();
@@ -20,7 +20,8 @@ function myFunction(e) {
     let email = $("#email").val();
     let password = $("#psw").val();
     let uuid = uuidv4();
-    let img = "/img/user1.jpg";
+    let img = images[randNum];
+    let bio = $("$bio").val();
 
 
      
@@ -33,7 +34,8 @@ function myFunction(e) {
             email: email,
             password: password,
             id: uuid,
-            image: img
+            image: img,
+            bio: bio
         }
         ])
         .then(res => {

@@ -44,4 +44,3 @@ function validate_login(data, username, password) {
         return false;
     }
 }
-  
