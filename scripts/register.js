@@ -3,7 +3,13 @@ function uuidv4() {
       var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
       return v.toString(16);
     });
-  } 
+  }
+  
+  function assgnPic() {
+      let randNum = Math.random() * (8 - 1) + 1;
+      let imagesAr = ["/img/user1.jpg", "/img/user2.jpg", "/img/user3.jpg","/img/user4.jpg", "/img/user5.jpg", "/img/user6.jpg", "/img/user7.jpg", "/img/user7.jpg"]
+      return imagesAr[randNum].toString;
+  }
 
 function myFunction(e) {
 
@@ -11,17 +17,14 @@ function myFunction(e) {
         "https://api.steinhq.com/v1/storages/5d3f9f9b87c49c04cac13690"
     );
 
-    let images = ["/img/user1.jpg", "/img/user2.jpg", "/img/user3.jpg"];
-    let randNum = Math.floor(Math.random() * 3);
-
     let fname = $("#fname").val();
     let lname = $("#lname").val();
     let username = $("#username").val();
     let email = $("#email").val();
     let password = $("#psw").val();
     let uuid = uuidv4();
-    let img = images[randNum];
-    let bio = $("$bio").val();
+    let img = assgnPic();
+    let bio = $("#bio").val();
 
 
      
@@ -33,9 +36,9 @@ function myFunction(e) {
             username: username,
             email: email,
             password: password,
-            id: uuid,
             image: img,
-            bio: bio
+            bio: bio,
+            id: uuid
         }
         ])
         .then(res => {
