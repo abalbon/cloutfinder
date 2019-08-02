@@ -7,9 +7,9 @@ function uuidv4() {
   }
   
   function assgnPic() {
-      let randNum = Math.random() * (8 - 1) + 1;
-      let imagesAr = ["/img/user1.jpg", "/img/user2.jpg", "/img/user3.jpg","/img/user4.jpg", "/img/user5.jpg", "/img/user6.jpg", "/img/user7.jpg", "/img/user7.jpg"]
-      return imagesAr[randNum].toString;
+      let randNum = Math.floor(Math.random() * (8));
+      let imagesAr = ["/img/user1.jpg", "/img/user2.jpg", "/img/user3.jpg","/img/user4.jpg", "/img/user5.jpg", "/img/user6.jpg", "/img/user7.jpg", "/img/user8.jpg"]
+      return imagesAr[randNum];
   }
 
 function myFunction(e) {
@@ -44,12 +44,12 @@ function myFunction(e) {
         ])
         .then(res => {
             console.log(res);
+            location.href = "/site/login.html";
         });
         e.preventDefault();   
+
 }
 
 document.getElementById('form').addEventListener('submit', myFunction);
 
-document.getElementById('submitbtn').addEventListener('click', function(){
-    location.href = "/site/login.html";
-})
+
