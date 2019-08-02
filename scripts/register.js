@@ -21,8 +21,7 @@ function myFunction(e) {
     let password = $("#psw").val();
     let uuid = uuidv4();
     let img = "/img/user1.jpg";
-
-
+    let bio = $("#bio").val();
      
     store
         .append("Users", [
@@ -33,7 +32,8 @@ function myFunction(e) {
             email: email,
             password: password,
             id: uuid,
-            image: img
+            image: img,
+            bio: bio
         }
         ])
         .then(res => {
