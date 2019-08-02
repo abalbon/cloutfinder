@@ -19,4 +19,5 @@ Check your node.js version by typing in:
 
 # Stein - https://docs.steinhq.com/introduction
 
-Our spreadsheet "database"
+Our spreadsheet "database" </br>
+https://docs.google.com/spreadsheets/d/1jB7NPvydbZgqFMVoXhkjFe6jAngbPtwT8qfPmZQq1-Y/edit?usp=sharing
