@@ -1,11 +1,11 @@
 # CloutFinder 
 A CPSC 349 - Web Front Engineering Project <br/>
 
-Nathan Nhek
-Eugene Lee
-Albert Balbon
-Mike Cheng
-Brannon Ha
+Nathan Nhek</br>
+Eugene Lee</br>
+Albert Balbon</br>
+Mike Cheng</br>
+Brannon Ha</br>
 
 # Install Node JS - https://nodejs.org/en/
 
