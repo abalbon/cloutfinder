@@ -88,6 +88,10 @@ li a#dislikeChoice:hover {
     margin: 4px;
 }
 
+header {
+    text-align: center;
+}
+
 li {
     text-align: center;
 }

@@ -4,7 +4,13 @@ function uuidv4() {
       var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
       return v.toString(16);
     });
-  } 
+  }
+  
+  function assgnPic() {
+      let randNum = Math.floor(Math.random() * (8));
+      let imagesAr = ["/img/user1.jpg", "/img/user2.jpg", "/img/user3.jpg","/img/user4.jpg", "/img/user5.jpg", "/img/user6.jpg", "/img/user7.jpg", "/img/user8.jpg"]
+      return imagesAr[randNum];
+  }
 
 function myFunction(e) {
 
@@ -12,17 +18,16 @@ function myFunction(e) {
         "https://api.steinhq.com/v1/storages/5d3f9f9b87c49c04cac13690"
     );
 
-    //let images = ["/img/user1.jpg", "/img/user2.jpg", "/img/user3.jpg"];
-    //let randNum = Math.floor(Math.random() * 3);
-
     let fname = $("#fname").val();
     let lname = $("#lname").val();
     let username = $("#username").val();
     let email = $("#email").val();
     let password = $("#psw").val();
     let uuid = uuidv4();
-    let img = "/img/user1.jpg";
+    let img = assgnPic();
     let bio = $("#bio").val();
+
+
      
     store
         .append("Users", [
@@ -32,19 +37,19 @@ function myFunction(e) {
             username: username,
             email: email,
             password: password,
-            id: uuid,
             image: img,
-            bio: bio
+            bio: bio,
+            id: uuid
         }
         ])
         .then(res => {
             console.log(res);
+            location.href = "/site/login.html";
         });
         e.preventDefault();   
+
 }
 
 document.getElementById('form').addEventListener('submit', myFunction);
 
-document.getElementById('submitbtn').addEventListener('click', function(){
-    location.href = "/site/login.html";
-})
+

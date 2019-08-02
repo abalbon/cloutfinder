@@ -14,7 +14,6 @@ function search_stein(e) {
         if(data.length != 0) {
             console.log("Username: " + data[0].username + " \nPassword: " + data[0].password);
             validate_login(data, username, password);
-            displayUsername(data);
         }
         else {
             console.log("LOGIN FAILED");
@@ -26,15 +25,33 @@ function search_stein(e) {
     e.preventDefault();
 }
 
+function searchUser(e) {
+
+    const store = new SteinStore(
+        "https://api.steinhq.com/v1/storages/5d3f9f9b87c49c04cac13690"
+    );
+
+    let currentUser = $('#username_login').val();
+
+    store.read("Users", { search: { username: currentUser} }).then(data => {
+        if(data.length != 0) {
+            displayUsername(data);
+        }
+    });
+}
+
 function displayUsername(data) {
+    console.log("in func");
+    console.log(data[0].username);
     document.getElementById('userTitle').innerHTML = data[0].username;
-    document.getElementById('userImg').src = data[0].image;
+    console.log(document.getElementById('usertTitle'))
 }
 
 function validate_login(data, username, password) {
     if ((username == data[0].username) && (password == data[0].password)) {
         console.log("LOGIN SUCCESS");
         location.href = "/site/index.html";
+        displayUsername(data);
         
         return true;
     }
@@ -44,4 +61,3 @@ function validate_login(data, username, password) {
         return false;
     }
 }
-  
